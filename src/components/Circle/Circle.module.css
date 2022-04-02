@@ -1,0 +1,34 @@
+.circle {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 100%;
+  color: var(--light-grey);
+  background-color: #2e3b47;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms ease;
+}
+.circle:hover {
+  color: var(--white);
+  background-color: var(--medium-grey);
+}
+
+.circle label,
+.checked label {
+  font-weight: 400;
+  font-size: 1.375rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.checked {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 100%;
+  color: var(--white);
+  background-color: var(--orange);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
