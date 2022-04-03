@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution: [Click here](https://www.frontendmentor.io/solutions/interactive-rating-component-using-react-and-css-modules-HJtNxJDQ9)
+- Live Site: [Click Here](https://brayanobisto.github.io/interactive-rating-component/)
 
 ## My process
 
