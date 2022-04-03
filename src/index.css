@@ -20,6 +20,7 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -38,7 +39,15 @@ body {
 .card {
   background-color: var(--dark-blue);
   border-radius: 1.5rem;
-  padding: 2.25rem 2rem;
+  padding: 2.25rem 2rem 3rem 2rem;
   width: 33.5rem;
-  height: 35.8rem;
+  height: 38.6167rem;
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 40rem;
+    border-radius: 3rem;
+    padding: 2.5rem 3rem 2.5rem 3rem;
+  }
 }
