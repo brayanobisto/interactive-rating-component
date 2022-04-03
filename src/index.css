@@ -32,8 +32,14 @@ body {
   background-color: var(--very-dark-blue);
   height: 100vh;
   padding: 0 2rem;
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1440px) {
+  padding: 0;
 }
 
 .card {
@@ -42,6 +48,7 @@ body {
   padding: 2.25rem 2rem 3rem 2rem;
   width: 33.5rem;
   height: 38.6167rem;
+  transition: opacity 2s ease-in-out;
 }
 
 @media (min-width: 1440px) {
