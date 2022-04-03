@@ -30,7 +30,7 @@ body {
 
 .app-container {
   background-color: var(--very-dark-blue);
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -48,14 +48,14 @@ body {
   background-color: var(--dark-blue);
   border-radius: 1.5rem;
   padding: 2.25rem 2rem 3rem 2rem;
-  width: 33.5rem;
-  height: 38.6167rem;
+  max-width: 33.5rem;
+  min-height: 38.6167rem;
   transition: opacity 2s ease-in-out;
 }
 
 @media (min-width: 1440px) {
   .card {
-    width: 40rem;
+    max-width: 40rem;
     border-radius: 3rem;
     padding: 2.5rem 3rem 2.5rem 3rem;
   }
