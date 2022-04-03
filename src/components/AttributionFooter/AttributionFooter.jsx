@@ -1,11 +1,17 @@
+import styles from './AttributionFooter.module.css';
+
 function AttributionFooter() {
   return (
-    <div class='attribution'>
+    <div class={styles.attribution}>
       Challenge by{' '}
-      <a href='https://www.frontendmentor.io?ref=challenge' target='_blank'>
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
         Frontend Mentor
       </a>
-      . Coded by <a href='#'>Brayan De Jesus Obispo Torres</a>.
+      . Coded by{' '}
+      <a href="https://github.com/brayanobisto" target="_blank">
+        Brayan Obispo Torres
+      </a>
+      .
     </div>
   );
 }
