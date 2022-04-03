@@ -1,0 +1,55 @@
+/* FLEX CONTAINER */
+.thankyou-card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMG */
+.thankyou-card div img {
+  transform: scale(0.9);
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* SELECTION INFO */
+.thankyou-card span {
+  display: inline-flex;
+  color: var(--orange);
+  background-color: #2e3b47;
+  padding: 0.875rem 1.5rem 0.5rem 1.5rem;
+  border-radius: 3rem;
+  margin-bottom: 2.75rem;
+}
+
+/* CARD TITLE */
+.thankyou-card h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* CARD PARAGRAPH */
+.thankyou-card p {
+  color: var(--light-grey);
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+/* TRANSITION */
+.thankyou-card {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-in {
+  opacity: 1;
+}
