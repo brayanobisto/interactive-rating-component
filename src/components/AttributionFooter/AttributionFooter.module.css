@@ -1,11 +1,18 @@
 .attribution {
-  color: var(--white);
-  position: fixed;
-  bottom: 1rem;
-  text-align: center;
+  display: none;
 }
 
-.attribution a {
-  color: var(--orange);
-  text-decoration: none;
+@media (min-width: 1440px) {
+  .attribution {
+    display: block;
+    color: var(--white);
+    position: fixed;
+    bottom: 1rem;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: var(--orange);
+    text-decoration: none;
+  }
 }
