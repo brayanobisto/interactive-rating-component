@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Circle from '../Circle/Circle';
 import star from '../../images/icon-star.svg';
 import styles from './FeedbackCard.module.css';
@@ -7,70 +6,73 @@ function FeedbackCard({ handleChange, valoration, submitValoration }) {
   return (
     <form className={`card ${styles['feedback-card']}`} onSubmit={submitValoration}>
       <Circle>
-        <img src={star} alt='Star' />
+        <img src={star} alt="Star" />
       </Circle>
       <h2>How did we do?</h2>
-      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
       <div className={styles['valoration-container']}>
-        <Circle checked={valoration === '1' ? true : false}>
-          <label htmlFor='one'>
+        <Circle>
+          <label htmlFor="one" className={valoration === '1' ? styles.checked : ''}>
             <input
-              type='radio'
-              id='one'
-              name='valoration'
-              value='1'
+              type="radio"
+              id="one"
+              name="valoration"
+              value="1"
               checked={valoration === '1' ? true : false}
               onChange={handleChange}
             />
             1
           </label>
         </Circle>
-        <Circle checked={valoration === '2' ? true : false}>
-          <label htmlFor='two'>
+        <Circle>
+          <label htmlFor="two" className={valoration === '2' ? styles.checked : ''}>
             <input
-              type='radio'
-              id='two'
-              name='valoration'
-              value='2'
+              type="radio"
+              id="two"
+              name="valoration"
+              value="2"
               checked={valoration === '2' ? true : false}
               onChange={handleChange}
             />
             2
           </label>
         </Circle>
-        <Circle checked={valoration === '3' ? true : false}>
-          <label htmlFor='three'>
+        <Circle>
+          <label htmlFor="three" className={valoration === '3' ? styles.checked : ''}>
             <input
-              type='radio'
-              id='three'
-              name='valoration'
-              value='3'
+              type="radio"
+              id="three"
+              name="valoration"
+              value="3"
               checked={valoration === '3' ? true : false}
               onChange={handleChange}
             />
             3
           </label>
         </Circle>
-        <Circle checked={valoration === '4' ? true : false}>
-          <label htmlFor='three'>
+        <Circle>
+          <label htmlFor="four" className={valoration === '4' ? styles.checked : ''}>
             <input
-              type='radio'
-              id='three'
-              name='valoration'
-              value='4'
+              type="radio"
+              id="four"
+              name="valoration"
+              value="4"
               checked={valoration === '4' ? true : false}
               onChange={handleChange}
             />
             4
           </label>
         </Circle>
-        <Circle checked={valoration === '5' ? true : false}>
-          <label htmlFor='three'>
+        <Circle>
+          <label htmlFor="five" className={valoration === '5' ? styles.checked : ''}>
             <input
-              type='radio'
-              id='three'
-              name='valoration'
-              value='5'
+              type="radio"
+              id="five"
+              name="valoration"
+              value="5"
               checked={valoration === '5' ? true : false}
               onChange={handleChange}
             />
@@ -78,7 +80,7 @@ function FeedbackCard({ handleChange, valoration, submitValoration }) {
           </label>
         </Circle>
       </div>
-      <button>Submit</button>
+      <button type="submit">Submit</button>
     </form>
   );
 }
