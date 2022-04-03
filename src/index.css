@@ -39,7 +39,9 @@ body {
 }
 
 @media (min-width: 1440px) {
-  padding: 0;
+  .app-container {
+    padding: 0;
+  }
 }
 
 .card {
