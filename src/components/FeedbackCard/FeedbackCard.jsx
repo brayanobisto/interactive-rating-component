@@ -2,9 +2,13 @@ import Circle from '../Circle/Circle';
 import star from '../../images/icon-star.svg';
 import styles from './FeedbackCard.module.css';
 
-function FeedbackCard({ handleChange, valoration, submitValoration }) {
+function FeedbackCard({ handleChangeValoration, valoration, submitValoration, fadeOut }) {
+  const clasName = fadeOut
+    ? `card ${styles['feedback-card']} ${styles['fade-out']}`
+    : `card ${styles['feedback-card']}`;
+
   return (
-    <form className={`card ${styles['feedback-card']}`} onSubmit={submitValoration}>
+    <form className={clasName} onSubmit={submitValoration}>
       <Circle>
         <img src={star} alt="Star" />
       </Circle>
@@ -22,7 +26,7 @@ function FeedbackCard({ handleChange, valoration, submitValoration }) {
               name="valoration"
               value="1"
               checked={valoration === '1' ? true : false}
-              onChange={handleChange}
+              onChange={handleChangeValoration}
             />
             1
           </label>
@@ -35,7 +39,7 @@ function FeedbackCard({ handleChange, valoration, submitValoration }) {
               name="valoration"
               value="2"
               checked={valoration === '2' ? true : false}
-              onChange={handleChange}
+              onChange={handleChangeValoration}
             />
             2
           </label>
@@ -48,7 +52,7 @@ function FeedbackCard({ handleChange, valoration, submitValoration }) {
               name="valoration"
               value="3"
               checked={valoration === '3' ? true : false}
-              onChange={handleChange}
+              onChange={handleChangeValoration}
             />
             3
           </label>
@@ -61,7 +65,7 @@ function FeedbackCard({ handleChange, valoration, submitValoration }) {
               name="valoration"
               value="4"
               checked={valoration === '4' ? true : false}
-              onChange={handleChange}
+              onChange={handleChangeValoration}
             />
             4
           </label>
@@ -74,7 +78,7 @@ function FeedbackCard({ handleChange, valoration, submitValoration }) {
               name="valoration"
               value="5"
               checked={valoration === '5' ? true : false}
-              onChange={handleChange}
+              onChange={handleChangeValoration}
             />
             5
           </label>

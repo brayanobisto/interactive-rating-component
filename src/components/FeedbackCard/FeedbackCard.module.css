@@ -1,3 +1,4 @@
+/* IMAGE */
 .feedback-card img {
   width: 1.5rem;
   height: 1.5rem;
@@ -126,4 +127,13 @@
 .feedback-card button:hover {
   color: var(--orange);
   background-color: var(--white);
+}
+
+/* TRANSITION */
+.feedback-card {
+  transition: opacity 1000ms ease-out;
+}
+
+.fade-out {
+  opacity: 0;
 }
