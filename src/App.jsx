@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div className="app-container">
+    <main className="app-container">
       {!submitted ? (
         <FeedbackCard
           handleChangeValoration={handleChangeValoration}
@@ -38,7 +38,7 @@ function App() {
         <ThankYouCard valoration={valoration} />
       )}
       <AttributionFooter />
-    </div>
+    </main>
   );
 }
 
