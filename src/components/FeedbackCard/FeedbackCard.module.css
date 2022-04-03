@@ -13,7 +13,7 @@
 }
 
 /* CARD TITLE */
-.feedback-card h2 {
+.feedback-card h1 {
   color: var(--white);
   margin: 2rem 0;
   font-weight: 700;
