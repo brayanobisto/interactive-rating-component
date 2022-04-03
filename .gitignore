@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#Frontend Mentor
+design/
+README-template.md
+style-guide.md
